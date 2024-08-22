@@ -3,19 +3,19 @@ const eventEmitter = new events.EventEmitter();
 
 //Event handler for user login
 const loginHandler = (username)=>{
-    console.log(`$(username) has logged in.`);
+    console.log(`${username} has logged in.`);
 };
 
 
 //Event handler for user logout
 const logoutHandler = (username)=>{
-    console.log(`$(username) has logged out.`);
+    console.log(`${username} has logged out.`);
 };
 
 
 //Event handler for errors
 const errorHandler = (error)=>{
-    console.log(`Error: $(error)`);
+    console.log(`Error: ${error}`);
 };
 
 //Assign event handler to events
