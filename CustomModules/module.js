@@ -19,10 +19,40 @@ const avg = (num)=>{
     return s/num.length;
 }
 
+
+const armstrong = (number)=>{
+    let numberOfDigits = number.length;
+    let sum = 0;
+
+    temp=number;
+    
+    while (temp > 0)
+        {
+        let remainder = temp % 10;
+
+        sum += remainder ** numberOfDigits
+        temp = parseInt(temp / 10); 
+
+        }
+ 
+        if (sum == number)
+        {
+            return `${number} : is an armstrong number`
+        }
+        else
+        {
+            return `${number} : is not an armstrong number`
+        }
+        
+}
+
+
 module.exports = {
     g:greet,
     s:sum,
-    a:avg
+    a:avg,
+    ag:armstrong
 }
 module.exports.name = "Yash"
+
 

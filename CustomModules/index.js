@@ -8,4 +8,5 @@ console.log("Your Average Score : "+mod.a([10,20,30]))
 
 console.log("Your Total Score : "+mod.name)
 
+console.log(mod.ag(153))
 
